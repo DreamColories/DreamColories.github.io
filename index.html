@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HUMANIMAL Project - Order Artwork</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        header {
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 2px solid #eee;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 30px 0;
+            justify-content: center;
+        }
+        .art-sample {
+            width: 200px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            background: white;
+            text-align: center;
+        }
+        .art-sample img {
+            max-width: 100%;
+            height: auto;
+        }
+        .pricing-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+        }
+        .pricing-table th, .pricing-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+        .pricing-table th {
+            background-color: #2c3e50;
+            color: white;
+        }
+        .pricing-table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .order-form {
+            background: white;
+            padding: 25px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-top: 30px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            background: #2c3e50;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 4px;
+        }
+        button:hover {
+            background: #1a252f;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            border-top: 1px solid #eee;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HUMANIMAL Project</h1>
+        <p>Order Custom Artwork for Your Conference</p>
+    </header>
+
+    <section>
+        <h2>Artwork Gallery</h2>
+        <div class="gallery">
+            <div class="art-sample">
+                <img src="https://via.placeholder.com/200x150?text=Clearred+Renal" alt="Clearred Renal">
+                <p>Clearred - Renal</p>
+            </div>
+            <div class="art-sample">
+                <img src="https://via.placeholder.com/200x150?text=Colorred+Textx-X" alt="Colorred Textx-X">
+                <p>Colorred - Textx-X</p>
+            </div>
+            <div class="art-sample">
+                <img src="https://via.placeholder.com/200x150?text=Old+Textx-X" alt="Old Textx-X">
+                <p>Colorred - Old Textx-X</p>
+            </div>
+            <div class="art-sample">
+                <img src="https://via.placeholder.com/200x150?text=Textx/ColorBox" alt="Textx/ColorBox">
+                <p>Colorred - Textx/ColorBox</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Pricing</h2>
+        <table class="pricing-table">
+            <thead>
+                <tr>
+                    <th>Size</th>
+                    <th>Normal Benci1</th>
+                    <th>Coloured Benci1</th>
+                    <th>Prolifer Benci1</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>A3</td>
+                    <td>$3,570</td>
+                    <td>$5,000</td>
+                    <td>$7,500</td>
+                </tr>
+                <tr>
+                    <td>A5</td>
+                    <td>$2,500</td>
+                    <td>$3,800</td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <td>A2</td>
+                    <td>$4,200</td>
+                    <td>$6,000</td>
+                    <td>$8,300</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Paper Options</h3>
+        <ul>
+            <li><strong>Ceband Panicbs:</strong> 36089 GSM</li>
+            <li><strong>Normal Panicbs:</strong> 36089 GSM</li>
+            <li><strong>Colorred Panicbs:</strong> 20000 GSM</li>
+            <li><strong>Panicil (autilus):</strong> 1600 GSM</li>
+        </ul>
+    </section>
+
+    <section class="order-form">
+        <h2>Place Your Order</h2>
+        <form action="https://formsubmit.co/your-email@example.com" method="POST">
+            <input type="hidden" name="_subject" value="New Artwork Order">
+            
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="size">Artwork Size</label>
+                <select id="size" name="size" required>
+                    <option value="">Select size</option>
+                    <option value="A3">A3</option>
+                    <option value="A5">A5</option>
+                    <option value="A2">A2</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="model">Art Model</label>
+                <select id="model" name="model" required>
+                    <option value="">Select model</option>
+                    <option value="Normal Benci1">Normal Benci1</option>
+                    <option value="Coloured Benci1">Coloured Benci1</option>
+                    <option value="Prolifer Benci1">Prolifer Benci1</option>
+                    <option value="Clearred Renal">Clearred - Renal</option>
+                    <option value="Colorred Textx-X">Colorred - Textx-X</option>
+                    <option value="Old Textx-X">Colorred - Old Textx-X</option>
+                    <option value="Textx/ColorBox">Colorred - Textx/ColorBox</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="paper">Paper Type</label>
+                <select id="paper" name="paper" required>
+                    <option value="">Select paper</option>
+                    <option value="Ceband Panicbs">Ceband Panicbs (36089 GSM)</option>
+                    <option value="Normal Panicbs">Normal Panicbs (36089 GSM)</option>
+                    <option value="Colorred Panicbs">Colorred Panicbs (20000 GSM)</option>
+                    <option value="Panicil (autilus)">Panicil (autilus) (1600 GSM)</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="notes">Special Instructions</label>
+                <textarea id="notes" name="notes" rows="4"></textarea>
+            </div>
+            
+            <button type="submit">Submit Order</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2023 HUMANIMAL Project. All artwork rights reserved.</p>
+    </footer>
+</body>
+</html>
